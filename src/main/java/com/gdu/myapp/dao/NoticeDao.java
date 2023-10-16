@@ -180,7 +180,9 @@ public class NoticeDao {
       
       ps = conn.prepareStatement(sql);
       rs = ps.executeQuery();
-      count = rs.getInt("COUNT");
+      while(rs.next()) {
+        count = rs.getInt("COUNT");
+      }
       System.out.println(count);
     } catch (Exception e) {
       e.printStackTrace();
@@ -189,9 +191,6 @@ public class NoticeDao {
     }
     
     return count;
-    
-    
-    
   }
   
   

@@ -44,7 +44,7 @@
     <h1>고양이 상사에 오신 걸 환영합니다</h1>
   </div>
   <div>
-    <img src="/resources/image/flower1.jpg" width="192px">
+    <img src="${contextPath}/resources/image/animal10.jpg" width="192px">
   </div>
   
   <hr>

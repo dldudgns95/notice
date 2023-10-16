@@ -2,6 +2,7 @@ package com.gdu.myapp;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -16,6 +17,7 @@ public class NoticeUnitTest {
   @Autowired
   private NoticeDao noticeDao;
   
+  @Test
   public void test_행개수() {
     
     int count = noticeDao.testCount();
